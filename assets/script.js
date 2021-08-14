@@ -13,7 +13,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
-    const passwordQuestions = prompt("Let's create a password, must be between 8 and 128 characters");
+    var passwordQuestions = prompt("Let's create a password, must be between 8 and 128 characters");
     while (passwordQuestions > 128 || passwordQuestions < 8 || isNaN(passwordQuestions)) {
        var passwordQuestions = prompt("Let's create a password, must be between 8 and 128 characters")
     }
